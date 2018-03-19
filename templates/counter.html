@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Counting Form</title>
+    
+    </head>
+    
+    <body>
+    <a href="{% url 'home' %}">Go home</a>
+        <form action="{% url 'jay' %}">
+               <h3> Word Container</h3><br/>
+            <textarea cols="30" rows="9"  name="phrase" placeholder="Enter Characters"></textarea>
+            <br/>
+            <button value="submit" type="submit">Count</button>
+
+        </form>
+
+    
+    
+    </body>
+
+</html>

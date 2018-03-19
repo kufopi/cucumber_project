@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Word Processor</title>
+    </head>
+    <a href="{% url 'count' %}">Start Again</a><br>
+    <a href="{% url 'home' %}">Home</a>
+<h3>Jump</h3>
+
+<p>Na wetin we talk:</p>
+<b>{{Words}}</b>
+<br>
+<h5>You entered {{number}} words into the container</h5>
+<h2 align="center">Container words</h2>
+{% for k,v in dictionary%}
+    {{k}} = {{v}}
+    <br/>
+    
+    {% endfor %}
+    
+    </html>
